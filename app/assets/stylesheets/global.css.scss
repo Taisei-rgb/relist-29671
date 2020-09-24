@@ -3,19 +3,21 @@ $light_gray: #c0c1c1;
 $green: #33cd99;
 
 @mixin bold_font {
-  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 * {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  padding-top: 4.5rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 7.2rem;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -26,7 +28,7 @@ body {
 .wrapper_with_padding {
   width: 80%;
   margin: 0 auto;
-  padding: 3.5rem 0;
+  padding: 5.6rem 0; // 56px
 }
 
 .clearfix:before,
@@ -44,8 +46,8 @@ button,
   border: none;
   outline: none;
   background: $green;
-  padding: 1rem 3.5rem;
-  border-radius: 2rem;
+  padding: 1.6rem 5.6rem; // 16px, 56px
+  border-radius: 3.2rem; // 32px
   a {
     color: white;
     text-decoration: none;
@@ -54,7 +56,7 @@ button,
 
 .button {
   color: white;
-  margin: 2rem 0;
+  margin: 3.2rem 0; // 32px
 }
 
 a {
@@ -70,14 +72,14 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1.75rem 0;
+  padding: 2.8rem 0; // 28px
   border-bottom: 7px solid $green;
   .header_inner {
     width: 90%;
     margin: 0 auto;
     #logo {
       display: inline-block;
-      width: 10rem;
+      width: 16rem; // 160px
       float: left;
     }
     nav {
@@ -85,9 +87,9 @@ header {
       a {
         text-decoration: none;
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.76rem; // 17.6px
         line-height: 1.5;
-        margin-left: 1rem;
+        margin-left: 1.6rem; // 16px
         &:hover {
           color: $green;
         }
@@ -99,13 +101,13 @@ header {
 footer {
   background: $dark_gray;
   width: 100%;
-  padding: 2rem 0;
+  padding: 3.2rem 0;
   color: white;
   text-align: center;
   @include bold_font;
   p {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: 1.36rem;
   }
 }
 
@@ -114,9 +116,9 @@ input[type="email"],
 input[type="password"],
 textarea {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   border: 1px solid $light_gray;
-  border-radius: 0.4rem;
+  border-radius: 0.64rem; // 6.4px
 }
 
 input[type="text"],

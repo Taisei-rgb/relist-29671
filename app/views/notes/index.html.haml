@@ -7,6 +7,11 @@
             %p.title= note.title 
             %p.date= time_ago_in_words(note.created_at)
     - else 
-      %h2 Add a note
-      %p It appears you haven't created notes yet... Let's fix that. Why don't you create a new note below.
-      %button= link_to "New note", new_note_path
+      %h2 あなたが今思っていること、感じていることを書き出してみよう！
+      %p - メリットや効果
+      %p - 幸福感が高まり、頭が良くなる
+      %p - 認知機能の向上
+      %p - 嫌いな相手が気にならなくなる
+      %p - 免疫力が向上する
+      %p - 筆記開示の生みの親であるテキサス大学のジェームズ・ペネベーガー博士によると、「数々の研究により、エクスプレッシブ・ライティングを行った被験者は幸福感が高まり、ネガティブな感情が減った。さらには、数週間から数ヶ月でうつや不安が改善し、ストレスが穏やかになる傾向も見られた。」と述べられています。
+      %button= link_to "投稿する", new_note_path
