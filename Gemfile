@@ -58,3 +58,4 @@ gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'simple_form'
 gem 'devise'
 gem 'rails-i18n'
+gem "font-awesome-rails"

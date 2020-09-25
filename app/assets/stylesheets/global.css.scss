@@ -1,6 +1,7 @@
-$dark_gray: #2b2e2e;
+$middle_green: #33cd99;
 $light_gray: #c0c1c1;
-$green: #33cd99;
+$hover_green: #15eda5;
+$gentle_green: #ebfff8;
 
 @mixin bold_font {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
@@ -31,23 +32,14 @@ body {
   padding: 5.6rem 0;
 }
 
-// .clearfix:before,
-// .clearfix:after {
-//   content: " ";
-//   // display: table;
-// }
-
-// .clearfix:after {
-//   clear: both;
-// }
-
 button,
 .button {
   border: none;
   outline: none;
-  background: $green;
+  background: $middle_green;
   padding: 1.6rem 5.6rem;
   border-radius: 3.2rem;
+  margin-top: 6px;
   a {
     color: white;
     text-decoration: none;
@@ -60,15 +52,12 @@ button,
 }
 
 a {
-  color: $green;
+  color: white;
   text-decoration: none;
-  &:hover {
-    color: $dark_gray;
-  }
 }
 
 header {
-  background: $dark_gray;
+  background: $middle_green;
   position: fixed;
   top: 0;
   width: 100%;
@@ -77,6 +66,9 @@ header {
   .header_inner {
     width: 90%;
     margin: 0 auto;
+    font-family: "Caveat", cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
     nav {
       float: right;
       a {
@@ -86,7 +78,7 @@ header {
         line-height: 1.5;
         margin-left: 1.6rem;
         &:hover {
-          color: $green;
+          color: $hover_green;
         }
       }
     }
