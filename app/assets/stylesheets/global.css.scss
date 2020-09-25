@@ -28,26 +28,26 @@ body {
 .wrapper_with_padding {
   width: 80%;
   margin: 0 auto;
-  padding: 5.6rem 0; // 56px
+  padding: 5.6rem 0;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
+// .clearfix:before,
+// .clearfix:after {
+//   content: " ";
+//   // display: table;
+// }
 
-.clearfix:after {
-  clear: both;
-}
+// .clearfix:after {
+//   clear: both;
+// }
 
 button,
 .button {
   border: none;
   outline: none;
   background: $green;
-  padding: 1.6rem 5.6rem; // 16px, 56px
-  border-radius: 3.2rem; // 32px
+  padding: 1.6rem 5.6rem;
+  border-radius: 3.2rem;
   a {
     color: white;
     text-decoration: none;
@@ -56,7 +56,7 @@ button,
 
 .button {
   color: white;
-  margin: 3.2rem 0; // 32px
+  margin: 3.2rem 0;
 }
 
 a {
@@ -72,42 +72,24 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 2.8rem 0; // 28px
-  border-bottom: 7px solid $green;
+  padding: 2.8rem 0;
+  border-bottom: 7px solid #e3e5e6;
   .header_inner {
     width: 90%;
     margin: 0 auto;
-    #logo {
-      display: inline-block;
-      width: 16rem; // 160px
-      float: left;
-    }
     nav {
       float: right;
       a {
         text-decoration: none;
         color: white;
-        font-size: 1.76rem; // 17.6px
+        font-size: 1.76rem;
         line-height: 1.5;
-        margin-left: 1.6rem; // 16px
+        margin-left: 1.6rem;
         &:hover {
           color: $green;
         }
       }
     }
-  }
-}
-
-footer {
-  background: $dark_gray;
-  width: 100%;
-  padding: 3.2rem 0;
-  color: white;
-  text-align: center;
-  @include bold_font;
-  p {
-    margin: 0;
-    font-size: 1.36rem;
   }
 }
 
@@ -118,7 +100,7 @@ textarea {
   width: 100%;
   margin-bottom: 1.6rem;
   border: 1px solid $light_gray;
-  border-radius: 0.64rem; // 6.4px
+  border-radius: 0.64rem;
 }
 
 input[type="text"],

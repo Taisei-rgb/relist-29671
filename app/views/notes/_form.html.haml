@@ -1,4 +1,4 @@
 = simple_form_for @note do |f|
   =f.input :title, label: false, placeholder: "title"
   =f.input :content, label: false, placeholder: "text"
-  =f.button :submit, class: "button"
+  =f.button :submit,  data: { disable_with: "送信中..."},class: "button"
