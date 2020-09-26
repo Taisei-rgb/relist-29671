@@ -9,7 +9,7 @@
 %body
   %header
     .header_inner
-      = link_to "Relist", root_path 
+      = link_to "Relist", root_path, class: "header_color"
       %nav
         - if user_signed_in?
           = link_to "＋", new_note_path

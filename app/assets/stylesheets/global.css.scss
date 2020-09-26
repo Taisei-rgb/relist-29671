@@ -32,6 +32,22 @@ body {
   padding: 5.6rem 0;
 }
 
+.title_width {
+  width: 100%;
+}
+
+.content_width {
+  width: 100%;
+}
+
+.header_color {
+  color: white;
+}
+
+.created_at {
+  color: white;
+}
+
 button,
 .button {
   border: none;
@@ -52,7 +68,7 @@ button,
 }
 
 a {
-  color: white;
+  color: $middle_green;
   text-decoration: none;
 }
 
@@ -85,20 +101,46 @@ header {
   }
 }
 
+.search-input {
+  width: 80%;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.reg_e_width {
+  width: 100%;
+}
+
+.reg_p_width {
+  width: 100%;
+}
+
+.reg_p_width_c {
+  width: 100%;
+}
+
+.session_e_width {
+  width: 100%;
+}
+
+.session_p_width {
+  width: 100%;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-  width: 100%;
   margin-bottom: 1.6rem;
   border: 1px solid $light_gray;
-  border-radius: 0.64rem;
+  border-radius: 0.84rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
   height: 40px;
+  padding-right: 10px;
 }
 
 textarea {
