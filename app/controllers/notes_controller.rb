@@ -40,6 +40,10 @@ class NotesController < ApplicationController
     end
   end
 
+  def search
+    @notes = Note.search(params[:search])
+  end
+
   private
 
   def find_note

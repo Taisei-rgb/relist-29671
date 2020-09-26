@@ -1,0 +1,11 @@
+.wrapper_with_padding
+  #notes
+    = form_with(url: search_notes_path, local: true ) do |f|
+      =f.text_field :search,  placeholder: "投稿を検索する", class: "search-input"
+      =f.submit value: "検索", data: { disable_with: "送信中..."}, class: "button"
+
+    - @notes.each do |note|
+      %a.created_at{ href: (url_for [note])}
+        .note
+          %p.title= note.title
+          %p.date= time_ago_in_words(note.created_at)
