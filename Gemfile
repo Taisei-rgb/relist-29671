@@ -62,3 +62,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'rails-i18n'
 gem "font-awesome-rails"
+
+group :production do
+  gem 'rails_12factor'
+end
