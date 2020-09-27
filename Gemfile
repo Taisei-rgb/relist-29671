@@ -63,6 +63,6 @@ gem 'devise'
 gem 'rails-i18n'
 gem "font-awesome-rails"
 
-group :production, :staging do
+group :production do
   gem 'rails_12factor'
 end
