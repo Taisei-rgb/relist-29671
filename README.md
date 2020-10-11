@@ -53,5 +53,5 @@ SNSやコロナウイルスの影響でたまるストレスの改善から、�
 
 # DB設計
 
-![DB設計](https://github.com/Taisei-rgb/relist-29671/issues/1#issue-718775059)
+![DB設計](https://i.gyazo.com/a8dc57d3bad611000b16bb68cbc8f127.png)
  
