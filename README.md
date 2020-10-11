@@ -26,7 +26,7 @@ SNSやコロナウイルスの影響でたまるストレスの改善から、�
  
 # DEMO
  
-![Demo](https://image-url.gif)
+![demo](https://user-images.githubusercontent.com/69156263/95674452-566aec00-0beb-11eb-9e58-2e0c9b468c36.gif)
  
  
 # 工夫した点
